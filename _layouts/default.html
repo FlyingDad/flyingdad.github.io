@@ -15,14 +15,6 @@
 <body>
 <div id="container">
   <div class="inner">
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/cv">CV</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
-    </nav>
     <header>
       <h1>{{ site.title | default: site.github.repository_name }}</h1>
       <h2>{{ site.description | default: site.github.project_tagline }}</h2>
@@ -42,7 +34,14 @@
     <section id="main_content">
       {{ content }}
     </section>
-
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/Virtual-Tourist">Virtual Tourist</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
     <footer>
       {% if site.github.is_project_page %}
       {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
